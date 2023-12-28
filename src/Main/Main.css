@@ -1,0 +1,80 @@
+.Logo {
+    width: 200px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box select,
+  .search-box input,
+  .search-box button {
+    margin-right: 10px;
+  }
+  
+
+  .Signin{
+    margin-left: auto;
+    width: 100px;
+    height: 50px;
+    color: #000000;
+    background-color: #ff9900;
+    font-size: larger;
+    font-weight: 600;
+    border: 2px solid #131921;
+    border-radius: 10px;
+
+  }
+
+  .Cart{
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 100px;
+    height: 50px;
+    color: #000000;
+    background-color: #ff9900;
+    font-size: larger;
+    font-weight: 600;
+    border: 2px solid #131921;
+    border-radius: 10px;
+  }
+
+
+.CenterOne{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 50px;
+    border: 2px solid #131921;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.Searchbar{
+    width: 450px;
+    height: 50px;
+    border: 2px solid #131921;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+.SearchIcon{
+    width: 70px;
+    height: 50px;
+    border: 2px solid #131921;
+    border-radius: 10px;
+    background-color: #ff9900;
+    font-size: 26px;
+
+}
+
+.DashboardDivv {
+    background-color: #131921
+
+}
+
+
