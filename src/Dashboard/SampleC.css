@@ -1,3 +1,35 @@
-.SamplePage{
-    height: 100vh;
-}
+/* Add these styles to your SampleC.css file */
+
+.SamplePage {
+    height: 200vh;
+    overflow: hidden; /* Hide the overflow content */
+  }
+  
+  .SampleImagesContainer {
+    display: flex;
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+  }
+  
+  .SampleImages {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .NavigationArrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .LeftArrow {
+    left: 10px;
+  }
+  
+  .RightArrow {
+    right: 10px;
+  }
+  
