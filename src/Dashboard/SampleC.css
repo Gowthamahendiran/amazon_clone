@@ -1,7 +1,7 @@
 /* Add these styles to your SampleC.css file */
 
 .SamplePage {
-    height: 200vh;
+    height: 300vh;
     overflow: hidden; /* Hide the overflow content */
   }
   
@@ -15,6 +15,11 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .OnePlusImage{
+    width: 100%;
+  }
+
   
   .NavigationArrows {
     position: absolute;
