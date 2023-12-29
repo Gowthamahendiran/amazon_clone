@@ -16,10 +16,6 @@ const Header = () => {
     <div className="DashboardDivv" >
       <div className="search-box">
         <img src={Logo} className="Logo" alt="Logo Image" />
-        <select className="CenterOne">
-          <option value="option1">All</option>
-          <option value="option2">Option 2</option>
-        </select>
         <input type="text" placeholder="Search Amazon.in " className="Searchbar" />
         <button className="SearchIcon">
           <FaSearch />

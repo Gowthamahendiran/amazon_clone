@@ -1,21 +1,21 @@
 .FooterCopy{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: aliceblue;
 }
 
 
 .FootLinks{
     text-align: center;
-    font-size: large;
+    font-size: medium;
    
 }
 
 .Cond,
 .Pri,
 .Int {
-  margin: 0 20px;
-  font-size: 25px;
+  margin: 0 25px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -46,7 +46,7 @@
   }
   
   .HorizontalList > div {
-    margin: 10px; /* Adjust the margin between items as needed */
+    margin: 40px; /* Adjust the margin between items as needed */
   }
   
   .HorizontalList ul {

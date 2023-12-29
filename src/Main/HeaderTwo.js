@@ -1,172 +1,62 @@
 import React from "react";
-import { Link } from "react-scroll";
 import './MainTwo.css'
 const HeaderTwo = () => {
     return (
         <div className="DashboardDiv">
-            <p></p>
           <ul className="NavListt">
             <li>
               <a href="/">ALL</a>
             </li>
             <li>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Fresh
-              </Link>
+            <a href="/Fresh">Fresh</a>
             </li>
             <li>
-              <Link
-                to="product"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Amazon Mini TV
-              </Link>
+            <a href="/Kitchen">Kitchen</a>
             </li>
             <li>
-            <Link
-                to="more"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Sell
-              </Link>
+            <a href="/Sell">Sell</a>
             </li>
 
             <li>
-            <Link
-                to="Best"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Best Sellers
-              </Link>
+            <a href="/Deal">Best</a>
             </li>
 
             <li>
-            <Link
-                to="Deal"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Today's Deals
-              </Link>
+            <a href="/Deal">Deal</a>
+            </li>
+            <li>
+            <a href="/mobile">Mobile</a>
             </li>
 
             <li>
-            <Link
-                to="Mobiles"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Mobiles
-              </Link>
+            <a href="/elec">Electronics</a>
             </li>
 
             <li>
-            <Link
-                to="Electronics"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Electronics
-              </Link>
+            <a href="/Service">Service</a>
             </li>
 
             <li>
-            <Link
-                to="Service"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Customer Service
-              </Link>
+            <a href="/Prime">Prime</a>
             </li>
 
             <li>
-            <Link
-                to="Prime"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Prime
-              </Link>
+            <a href="/New">New</a>
             </li>
 
             <li>
-            <Link
-                to="New"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                New Releases
-              </Link>
+            <a href="/hoome">Home</a>
             </li>
 
             <li>
-            <Link
-                to="Kitchen"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Home and Kitchen
-              </Link>
+            <a href="/Tv">TV</a>
             </li>
 
             <li>
-            <Link
-                to="Books"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="Linkto"
-              >
-                Books
-              </Link>
-            </li>
-
-            <li>
-              <a href="/login">Fashion</a>
+              <a href="/fashion">Fashion</a>
             </li>
             <li>
+            <a href="/Appliance">Appliance</a>
             </li>
           </ul>
         </div>
