@@ -13,6 +13,7 @@ import HomeEss from "../Img/Home_Essentials.jpg"
 import "./Card.css";
 import SampleTwo from "./SampleTwo.js"
 import OnePlus from "../Img/OnePlus.jpg"
+import OnePlusCard from "./OnePlus.js"
 
 const Sample = () => {
   const containerRef = useRef(null);
@@ -91,6 +92,8 @@ const Sample = () => {
       <br />
       <br />
       <img src={OnePlus} alt="One Plus" className="OnePlusImage" />
+      <br />
+      <OnePlusCard />
     </div>
   );
 };
