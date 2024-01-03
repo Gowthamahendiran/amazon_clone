@@ -1,0 +1,55 @@
+.cardd-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 82%;
+  }
+  
+
+
+  .cardd {
+    width: calc(26% - (20px + 2px));
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .cardd-image {
+    width: 350px;
+    overflow: hidden;
+    margin-right: 16px;
+  }
+  
+  .imagee {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cardd-content {
+    flex: 1;
+    padding: 16px;
+  }
+  
+  h2 {
+    margin-bottom: 8px;
+  }
+  
+  .description,
+  .price {
+    margin-bottom: 4px;
+  }
+  
+
+.page-container {
+    display: flex;
+  }
+  
+  .filter-container {
+    width: 18%;
+    padding: 16px;
+    border-right: 1px solid #ddd;
+  }
+

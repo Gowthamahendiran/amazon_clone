@@ -41,7 +41,7 @@ const Footer = () => {
             <div className="FootLinks">
             <a href="/FooterOne" className="Cond">Conditions of Use & Sales</a>
             <a href="/FooterTwo" className="Pri">Privacy Notice</a>
-            <a href="/FooterThree" className="Int">Interest-Based Ads</a>
+            <a href="/uploadImage" className="Int">Interest-Based Ads</a>
             </div>
             <h2 className="FooterCopy">© 1996-2023, Amazon.com, Inc. or its affiliates</h2>
             <br />

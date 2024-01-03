@@ -5,6 +5,10 @@ import { Route,Routes } from "react-router-dom";
 import Sample from "./Dashboard/Sample";
 import HeaderTwo from "./Main/HeaderTwo";
 import FootTwo from "./Main/FootTwo";
+import MakeupProducts from "./Dashboard/MakeupProducts";
+import ImageUploadForm from "./Dashboard/ImageUploadForm";
+import MensFashion from "./Dashboard/MensFashion";
+import SearchResults from "./SearchResults";
 const App = () => {
   return(
     <div>
@@ -12,6 +16,10 @@ const App = () => {
       <HeaderTwo />
       <Routes>
         <Route path="/" element={<Sample />}/>
+        <Route path="/category/makeup" element={<MakeupProducts />} />
+        <Route path="/uploadImage" element={<ImageUploadForm />} />
+        <Route path="/category/home-essentials" element={<MensFashion />} />
+        <Route path="/search-results" element={<SearchResults />} />
       </Routes>
       <FootTwo />
       <Footer />
