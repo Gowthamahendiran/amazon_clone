@@ -9,6 +9,7 @@ import MakeupProducts from "./Dashboard/MakeupProducts";
 import ImageUploadForm from "./Dashboard/ImageUploadForm";
 import MensFashion from "./Dashboard/MensFashion";
 import SearchResults from "./SearchResults";
+import ProductDetail from "./Dashboard/ProductDetail";
 const App = () => {
   return(
     <div>
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/uploadImage" element={<ImageUploadForm />} />
         <Route path="/category/home-essentials" element={<MensFashion />} />
         <Route path="/search-results" element={<SearchResults />} />
+        <Route path="/product/:productId" element={<ProductDetail />} />
       </Routes>
       <FootTwo />
       <Footer />
