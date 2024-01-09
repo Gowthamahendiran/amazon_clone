@@ -11,10 +11,10 @@ const SampleTwo = () =>{
         <div>
              <div className="Card">
         <br />
-        <h3>New Look for New Season</h3>
+        <h3 className="HeadingCard">New Look for New Season</h3>
         <img src={MensFashion} alt="SampleImage" className="CardImage" />
         <div className="CardContent">
-          <a href="/linkone">See all deals</a>
+          <span>See all Deals</span>
         </div>
       </div>
 
@@ -23,28 +23,28 @@ const SampleTwo = () =>{
 
       <div className="Card">
         <br />
-        <h3>Deals by Recent History</h3>
+        <h3 className="HeadingCard">Deals by Recent History</h3>
         <img src={SampleImage5} alt="SampleImage" className="CardImage" />
         <div className="CardContent">
-          <a href="/linkone">See all deals</a>
+        <span>See all Deals</span>
         </div>
       </div>
       <div className="Card">
         <br />
-        <h3>Work from Home Essentials</h3>
+        <h3 className="HeadingCard">Work from Home Essentials</h3>
         <img src={SampleImage6} alt="SampleImage" className="CardImage" />
         <div className="CardContent">
-          <a href="/linkone">See all deals</a>
+        <span>See all Deals</span>
         </div>
       </div>
 
 
       <div className="Card">
         <br />
-        <h3>Innovations for Indian Brands</h3>
+        <h3 className="HeadingCard">Innovations for Indian Brands</h3>
         <img src={Indian} alt="SampleImage" className="CardImage" />
         <div className="CardContent">
-          <a href="/linkone">See all deals</a>
+        <span>See all Deals</span>
         </div>
       </div>
 

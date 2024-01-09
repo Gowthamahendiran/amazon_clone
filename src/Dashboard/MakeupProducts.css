@@ -53,3 +53,43 @@
     border-right: 1px solid #ddd;
   }
 
+  .prime{
+    color: rgb(29, 175, 215);
+    font-weight: 700;
+  }
+
+  .LinkView{
+    color: black;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+  .price{
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50px;
+    background-color: #ff9900;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  
+  /* Remove text decoration for all elements */
+  * {
+    text-decoration: none;
+  }
+
+
+  .CardTitle{
+    color: black;
+  }
+
+  .Ratingss{
+    color: black;
+  }

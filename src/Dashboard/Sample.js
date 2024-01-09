@@ -160,7 +160,7 @@ const Sample = () => {
       <Link to="/category/makeup" onClick={() => window.scrollTo(0, 0)} >
         <div className="Card">
           <br />
-          <h3>Makeup Products</h3>
+          <h3 className="HeadingCard">Makeup Products</h3>
           <img src={Fashion} alt="SampleImage" className="CardImage" />
           <div className="CardContent">
             <span>See all deals</span>
@@ -171,7 +171,7 @@ const Sample = () => {
       <Link to="/category/home-essentials"  onClick={() => window.scrollTo(0, 0)} >
         <div className="Card">
           <br />
-          <h3>Home Essentials</h3>
+          <h3 className="HeadingCard">Home Essentials</h3>
           <img src={HomeEss} alt="SampleImage" className="CardImage" />
           <div className="CardContent">
             <span>See all deals</span>
@@ -182,7 +182,7 @@ const Sample = () => {
       <Link to="/category/smart-gadgets" onClick={() => window.scrollTo(0, 0)} >
         <div className="Card">
           <br />
-          <h3>Smart Gadgets for Smart People</h3>
+          <h3 className="HeadingCard">Smart Gadgets for Smart People</h3>
           <img src={SmartGad} alt="SampleImage" className="CardImage" />
           <div className="CardContent">
             <span>See all deals</span>
@@ -193,7 +193,7 @@ const Sample = () => {
       <Link to="/category/value-bazaar" onClick={() => window.scrollTo(0, 0)} >
         <div className="Card">
           <br />
-          <h3>Value Bazaar</h3>
+          <h3 className="HeadingCard">Value Bazaar</h3>
           <img src={Bazzar} alt="SampleImage" className="CardImage" />
           <div className="CardContent">
             <span>See all deals</span>

@@ -7,11 +7,69 @@
   
   .image-container {
     flex: 1;
-    margin-right: 20px;
     margin-left: 50px;
   }
   
   .content-container {
-    flex: 1;
+    flex: 1.5;
   }
   
+
+  .Prod-detail-p{
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 60px;
+    background-color: #ff9900;
+    font-size: large;
+    font-weight: bold;
+  }
+
+
+  .MinusButton{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #ff9900;
+    border-radius: 5px;
+    background-color: #ff9900;
+  }
+
+  .PlusButton{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #ff9900;
+    border-radius: 5px;
+    background-color: #ff9900;
+  }
+
+  .Quality{
+    font-size: large;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+
+  .AddButton{
+    font-size: large;
+    width: 150px;
+    background-color: yellow;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+
+  .BuyButton{
+    font-size: large;
+    width: 150px;
+    background-color:#ff9900;
+    border: 2px solid #ff9900;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
