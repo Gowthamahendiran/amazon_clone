@@ -44,3 +44,25 @@
     margin-bottom: 8px;
   }
   
+
+
+  .search-price{
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50px;
+    background-color: #ff9900;
+    font-size: large;
+    font-weight: bold;
+  }
+
+
+  .original-price {
+    color: gray;
+    text-decoration: line-through;
+  }
+
+  .price-container {
+    display: flex;
+    align-items: baseline;
+  }

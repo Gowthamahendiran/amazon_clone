@@ -59,7 +59,16 @@ const ProductDetail = () => {
       <div className="content-container">
         <h2>{product.title}</h2>
         <p>{product.description}</p>
-        <p className="Prod-detail-p">&#8377; {product.price}</p>
+        <div className="price-container">
+            <p className="search-price">&#8377; {product.price}</p>
+            &nbsp; 
+            Orginal Price &nbsp;
+              {product.originalPrice && (
+                <del className="original-price">&#8377;{product.originalPrice}</del>
+              )}
+              </div>
+
+
         <p><StarRating rating={product.rating}/>{product.rated}</p>
         <p>{product.used}</p>
         <div className="quantity-container">
