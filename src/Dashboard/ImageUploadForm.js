@@ -15,6 +15,13 @@ const ImageUploadForm = () => {
   const [rating, setRating] = useState(0);
   const [rated, setRated] = useState("");
   const [used, setUsed] = useState("");
+  const [offerOneTitle, setOfferOneTitle] = useState("");
+  const [offerOneDescription, setofferOneDescription] = useState("");
+  const [offerTwoDescription, setofferTwoDescription] = useState("");
+  const [offerTwoTitle, setOfferTwoTitle] = useState("");
+
+
+
 
 
   const handleProfileImageChange = (event) => {
@@ -42,7 +49,10 @@ const ImageUploadForm = () => {
     formData.append("rated", rated);
     formData.append("used", used);
     formData.append("originalPrice", originalPrice);
-
+    formData.append("offerOneTitle", offerOneTitle);
+    formData.append("offerOneDescription", offerOneDescription);
+    formData.append("offerTwoTitle", offerTwoTitle);
+    formData.append("offerTwoDescription", offerTwoDescription);
 
     try {
       const response = await fetch("http://localhost:5000/api/uploadd", {
@@ -120,6 +130,19 @@ const ImageUploadForm = () => {
         <br />
         <input type="text" placeholder="Used" onChange={(e) => setUsed(e.target.value)} />
         <br />
+        <input type="text" placeholder="Offer One Title" onChange={(e) => setOfferOneTitle(e.target.value)} />
+<br />
+<input type="text" placeholder="Offer One Description" onChange={(e) => setofferOneDescription(e.target.value)} />
+<br />
+
+
+<input type="text" placeholder="Offer Two Title" onChange={(e) => setOfferTwoTitle(e.target.value)} />
+<br />
+<input type="text" placeholder="Offer Two Description" onChange={(e) => setofferTwoDescription(e.target.value)} />
+<br />
+
+
+    
         <button type="submit">Create a Product</button>
       </form>
       <button onClick={Back}>Back</button>

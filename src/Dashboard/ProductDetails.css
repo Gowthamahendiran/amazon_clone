@@ -72,3 +72,40 @@
     font-weight: 500;
     margin-top: 10px;
   }
+
+
+  .OfferCard{
+    width: 190px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    display: inline-block; /* Display cards inline */
+    text-align: center; 
+  }
+
+
+  .break-line {
+    border-top: 2px solid black;
+    margin-top: 15px; /* Adjust the margin as needed */
+  }
+
+
+  .LogosCenter{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 5px; 
+  }
+
+
+  .LogosCenter .LogoCenterIcon {
+    font-size: 4em; /* Adjust the size as needed */
+  }
+
+
+
+
+
+  

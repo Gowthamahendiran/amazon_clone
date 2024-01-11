@@ -27,7 +27,7 @@ const Header = () => {
         <button className="SearchIcon" onClick={handleSubmit}>
           <FaSearch />
         </button>
-        <button className="Signin" onClick={() => navigate("/")}>
+        <button className="Signin" onClick={() => navigate("/Signin")}>
           Sign in
         </button>
         <button className="Cart">
@@ -39,3 +39,4 @@ const Header = () => {
 };
 
 export default Header;
+
