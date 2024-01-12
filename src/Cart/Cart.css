@@ -71,3 +71,12 @@
     align-items: baseline;
   }
   
+
+  .delete-button{
+    font-size: large;
+    margin-top: 30px;
+    color: white;
+    background-color: RED;
+    border: 2px solid red;
+    border-radius: 5px;
+  }

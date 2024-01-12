@@ -60,13 +60,14 @@ const ProductDetail = () => {
           price: product.price,
           quantity,
           description: product.description,
+          title: product.title,
         }),
       });
   
       if (response.ok) {
         toast.success(`${product.title} has been added to your cart!`, {
           position: "bottom-right",
-          autoClose: 3000, //(3 seconds)
+          autoClose: 5000, 
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
