@@ -5,6 +5,11 @@ import StarRating from "./StarRating";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { BsCash } from "react-icons/bs";
 import { MdOutlineSecurity } from "react-icons/md";
+import { toast } from "react-toastify";
+import { ToastContainer } from 'react-toastify';
+
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 const ProductDetail = () => {
@@ -42,10 +47,38 @@ const ProductDetail = () => {
     }
   };
 
-  const handleAddToCart = () => {
-    // Add your logic to handle adding the product to the cart
-    const updatedAmount = quantity * product.price;
-    console.log(`Added ${quantity} ${product.title} to cart`);
+  const handleAddToCart = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/api/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          productId: product._id, 
+          image: product.imageData, 
+          price: product.price,
+          quantity,
+          description: product.description,
+        }),
+      });
+  
+      if (response.ok) {
+        toast.success(`${product.title} has been added to your cart!`, {
+          position: "bottom-right",
+          autoClose: 3000, //(3 seconds)
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+      } else {
+        const errorData = await response.json();
+        console.error("Failed to add product to cart:", errorData);
+      }
+    } catch (error) {
+      console.error("Error adding product to cart:", error);
+    }
   };
 
   if (!product) {
@@ -138,6 +171,7 @@ const ProductDetail = () => {
         <br />
         <br />
       </div>
+      <ToastContainer />
     </div>
   );
 };

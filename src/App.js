@@ -12,7 +12,7 @@ import SearchResults from "./SearchResults";
 import ProductDetail from "./Dashboard/ProductDetail";
 import Signin from "./SignIn/Signin";
 import Register from "./SignIn/Register";
-import Cart from "./Dashboard/Cart";
+import Cart from "./Cart/Cart";
 const App = () => {
   return(
     <div>
@@ -27,8 +27,7 @@ const App = () => {
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="/cart" element={<Cart />} />
-
+        <Route path="/Cart" element={<Cart />} />
       </Routes>
       <FootTwo />
       <Footer />

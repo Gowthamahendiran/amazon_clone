@@ -30,7 +30,7 @@ const Header = () => {
         <button className="Signin" onClick={() => navigate("/Signin")}>
           Sign in
         </button>
-        <button className="Cart">
+        <button className="Cart" onClick={() => navigate("/Cart")}>
           <CiShoppingCart className="CartIcon" /> Cart
         </button>
       </div>
