@@ -20,6 +20,7 @@ import HistoryProd from "./Dashboard/HistoryProd";
 import WFH from "./Dashboard/WFH";
 import Indian from "./Dashboard/Indian";
 import OneplusProd from "./Dashboard/OneplusProd";
+import Mobiles from "./Dashboard/Mobiles";
 const App = () => {
   return(
     <div>
@@ -27,6 +28,7 @@ const App = () => {
       <HeaderTwo />
       <Routes>
         <Route path="/" element={<Sample />}/>
+        <Route path="/mobile" element={<Mobiles />}/>
         <Route path="/category/makeup" element={<MakeupProducts />} />
         <Route path="/uploadImage" element={<ImageUploadForm />} />
         <Route path="/category/home-essentials" element={<MensFashion />} />

@@ -15,8 +15,11 @@ import "./Card.css";
 import SampleTwo from "./SampleTwo.js";
 import OnePlus from "../Img/OnePlus.jpg";
 import OnePlusCard from "./OnePlus.js";
+import { useNavigate } from "react-router-dom";
+
 
 const Sample = () => {
+  const navigate = useNavigate();
   const containerRef = useRef(null);
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -30,10 +33,14 @@ const Sample = () => {
 
   const transformValue = `translateX(${-currentImage * 100}%)`;
 
+  const handleimage = () => {
+    navigate('/mobile')
+    window.scrollTo(0, 0);
+  }
   return (
     <div className="SamplePage">
       <div className="SampleImagesContainer" style={{ transform: transformValue }} ref={containerRef}>
-        <img src={SampleImage1} alt="SampleImageOne" className="SampleImages" />
+        <img src={SampleImage1} alt="SampleImageOne" className="SampleImages" onClick={()=> handleimage()}/>
         <img src={SampleImage2} alt="SampleImageTwo" className="SampleImages" />
         <img src={SampleImage3} alt="SampleImageThree" className="SampleImages" />
         <img src={SampleImage4} alt="SampleImageFour" className="SampleImages" />
