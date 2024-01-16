@@ -1,7 +1,7 @@
 .cardd-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
     width: 82%;
   }
@@ -9,7 +9,7 @@
 
 
   .cardd {
-    width: calc(26% - (20px + 2px));
+    width: calc(32% - (20px + 2px));
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -26,7 +26,8 @@
   
   .imagee {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
   }
   
   .cardd-content {

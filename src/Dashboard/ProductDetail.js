@@ -165,7 +165,7 @@ const ProductDetail = () => {
         </div>
         <br />
         <button onClick={handleAddToCart} className="AddButton">
-          CheckOut
+          Add to Cart
         </button>
         <br />
         <br />
