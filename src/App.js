@@ -16,6 +16,10 @@ import Cart from "./Cart/Cart";
 import SmartProd from "./Dashboard/SmartProd";
 import ValueProd from "./Dashboard/ValueProd";
 import Dress from "./Dashboard/Dress";
+import HistoryProd from "./Dashboard/HistoryProd";
+import WFH from "./Dashboard/WFH";
+import Indian from "./Dashboard/Indian";
+import OneplusProd from "./Dashboard/OneplusProd";
 const App = () => {
   return(
     <div>
@@ -28,8 +32,12 @@ const App = () => {
         <Route path="/category/home-essentials" element={<MensFashion />} />
         <Route path="/category/smart-gadgets" element={<SmartProd />} />
         <Route path="/category/Dress" element={<Dress />} />
+        <Route path="/category/History" element={<HistoryProd />} />
         <Route path="/category/value-bazaar" element={<ValueProd />} />
+        <Route path="/category/WFH" element={<WFH />} />
+        <Route path="/category/indian-brands" element={<Indian />} />
         <Route path="/search-results" element={<SearchResults />} />
+        <Route path="/category/oneplus" element={<OneplusProd />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Register" element={<Register />} />
