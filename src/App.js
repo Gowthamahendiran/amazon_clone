@@ -13,6 +13,8 @@ import ProductDetail from "./Dashboard/ProductDetail";
 import Signin from "./SignIn/Signin";
 import Register from "./SignIn/Register";
 import Cart from "./Cart/Cart";
+import SmartProd from "./Dashboard/SmartProd";
+import ValueProd from "./Dashboard/ValueProd";
 const App = () => {
   return(
     <div>
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/category/makeup" element={<MakeupProducts />} />
         <Route path="/uploadImage" element={<ImageUploadForm />} />
         <Route path="/category/home-essentials" element={<MensFashion />} />
+        <Route path="/category/smart-gadgets" element={<SmartProd />} />
+        <Route path="/category/value-bazaar" element={<ValueProd />} />
         <Route path="/search-results" element={<SearchResults />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/Signin" element={<Signin />} />
