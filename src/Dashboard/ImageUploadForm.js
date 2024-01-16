@@ -13,12 +13,12 @@ const ImageUploadForm = () => {
   const [originalPrice, setOriginalPrice] = useState("")
   const [category, setCategory] = useState("");
   const [rating, setRating] = useState(0);
-  const [rated, setRated] = useState("");
-  const [used, setUsed] = useState("");
-  const [offerOneTitle, setOfferOneTitle] = useState("");
-  const [offerOneDescription, setofferOneDescription] = useState("");
-  const [offerTwoDescription, setofferTwoDescription] = useState("");
-  const [offerTwoTitle, setOfferTwoTitle] = useState("");
+  const [rated, setRated] = useState("400+ Rated");
+  const [used, setUsed] = useState("3,000 users bought this dress in past 3 weeks");
+  const [offerOneTitle, setOfferOneTitle] = useState("Bank Offer");
+  const [offerOneDescription, setofferOneDescription] = useState("Save upto ₹50 on HDFC and ICICI Bank ");
+  const [offerTwoDescription, setofferTwoDescription] = useState("Get GST Invoice upto 10% on this Product");
+  const [offerTwoTitle, setOfferTwoTitle] = useState("Partner Offer");
 
 
 
@@ -72,9 +72,7 @@ const ImageUploadForm = () => {
     navigate("/");
   };
 
-  const Back = () => {
-    navigate("/");
-  };
+
 
   return (
     <div>
@@ -126,9 +124,17 @@ const ImageUploadForm = () => {
             </span>
           ))}
         </div>
+
+
+        <br />
+
         <input type="text" placeholder="Rated" onChange={(e) => setRated(e.target.value)} />
         <br />
         <input type="text" placeholder="Used" onChange={(e) => setUsed(e.target.value)} />
+        <br />
+        <br />
+        <br/>
+        <br />
         <br />
         <input type="text" placeholder="Offer One Title" onChange={(e) => setOfferOneTitle(e.target.value)} />
 <br />
@@ -145,7 +151,6 @@ const ImageUploadForm = () => {
     
         <button type="submit">Create a Product</button>
       </form>
-      <button onClick={Back}>Back</button>
     </div>
   );
 };

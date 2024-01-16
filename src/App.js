@@ -15,6 +15,7 @@ import Register from "./SignIn/Register";
 import Cart from "./Cart/Cart";
 import SmartProd from "./Dashboard/SmartProd";
 import ValueProd from "./Dashboard/ValueProd";
+import Dress from "./Dashboard/Dress";
 const App = () => {
   return(
     <div>
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/uploadImage" element={<ImageUploadForm />} />
         <Route path="/category/home-essentials" element={<MensFashion />} />
         <Route path="/category/smart-gadgets" element={<SmartProd />} />
+        <Route path="/category/Dress" element={<Dress />} />
         <Route path="/category/value-bazaar" element={<ValueProd />} />
         <Route path="/search-results" element={<SearchResults />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
