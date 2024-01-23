@@ -19,7 +19,7 @@ const Header = () => {
         <img src={Logo} className="Logo" alt="Logo Image" />
         <input
           type="text"
-          placeholder="&nbsp;Search Amazon.in "
+          placeholder="Search Amazon.in "
           className="Searchbar"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
